@@ -16,22 +16,13 @@ const projectsData = [
   {
     id: 1,
     title: "pms-dashboard",
-    description:
-      "",
-    tags: [
-      "React Js",
-      "Node Js",
-      "",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Bootstrap5",
-    ],
+    description: "",
+    tags: ["React Js", "Node Js", "cron", "axios", "datatables", "moment"],
     category: "web",
     githubLink: "#",
     liveLink: "https://brahmagems.com/",
     date: "2025-06-15",
-    image: "brahmagems.jpg",
+    image: "pms-dashboard.jpg",
   },
   {
     id: 1,
