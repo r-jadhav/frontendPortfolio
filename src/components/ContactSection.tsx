@@ -46,7 +46,7 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/renuka",
+      href: "https://www.linkedin.com/in/renuka-jadhav-492bb3244",
       color: "hover:bg-blue-600",
     },
     // {

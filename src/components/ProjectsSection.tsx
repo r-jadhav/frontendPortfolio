@@ -92,13 +92,13 @@ const ProjectsSection = () => {
       featured: false,
     },
     {
-      title: "Charbhuja",
+      title: "Sugar and Spice",
       description:
-        "Charbhuja Marble & Tile website to showcase their exquisite collection of imported Italian marble, onyx, and exotic natural stones. The site highlights clear product categories, making it easy for users to explore white marble, travertine, and more. ",
-      image: "charbhuja.jpg",
-      technologies: ["Wordpress", "MySql"],
+        "Designed a customer-friendly interface for Sugar & Spice, showcasing their range of celebration cakes, gluten-free options, and corporate gift hampers. Emphasized responsive navigation and clear presentation to enhance memorable ordering experiences.",
+      image: "sugar-spice.jpg",
+      technologies: ["Shopify"],
       type: "web",
-      liveUrl: "https://charbhuja.biz/",
+      liveUrl: "https://www.thesugarandspice.com/",
       githubUrl: "#",
       featured: true,
     },

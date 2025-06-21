@@ -15,6 +15,26 @@ import Header from "@/components/Header";
 const projectsData = [
   {
     id: 1,
+    title: "pms-dashboard",
+    description:
+      "",
+    tags: [
+      "React Js",
+      "Node Js",
+      "",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap5",
+    ],
+    category: "web",
+    githubLink: "#",
+    liveLink: "https://brahmagems.com/",
+    date: "2025-06-15",
+    image: "brahmagems.jpg",
+  },
+  {
+    id: 1,
     title: "Brahma Gems",
     description:
       "Built the Brahma Gems platform for Anshul Goel to help users find the right gemstone or Rudraksha based on their kundli. Delivered a clean, informative, and responsive interface to support guided, astrology-based purchases.",
@@ -366,7 +386,27 @@ const ProjectCard = ({ project }: { project: any }) => (
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
     </div>
     <div className="p-6">
-      <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+      <div className="flex justify-between items-center">
+        <h3 className="text-xl font-semibold text-white mb-2">
+          {project.title}
+        </h3>
+
+        {project.liveLink && (
+          <Button variant="ghost" size="icon" asChild>
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ExternalLink
+                size={20}
+                className="hover:text-gray-300 transition-colors duration-200"
+              />
+            </a>
+          </Button>
+        )}
+      </div>
+
       <p className="text-gray-400 text-base mb-4">{project.description}</p>
       <div className="flex flex-wrap gap-2 mb-4">
         {project.tags.map((tag) => (
@@ -378,7 +418,7 @@ const ProjectCard = ({ project }: { project: any }) => (
           </span>
         ))}
       </div>
-      <div className="flex justify-between items-center">
+      {/* <div className="flex justify-between items-center">
         <div className="text-gray-500 text-sm">
           <Calendar size={14} className="inline-block mr-1" />
           {new Date(project.date).toLocaleDateString()}
@@ -413,7 +453,7 @@ const ProjectCard = ({ project }: { project: any }) => (
             </Button>
           )}
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 );

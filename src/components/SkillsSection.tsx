@@ -55,7 +55,7 @@ const SkillsSection = () => {
     {
       icon: GitBranch,
       title: "Tools & Others",
-      skills: ["Git", "GitHub", "Vercel", "Figma"],
+      skills: ["GitHub", "Vercel", "Figma"],
       color: "from-gray-500 to-slate-600",
       glowColor: "shadow-gray-500/25",
     },
